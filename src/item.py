@@ -36,11 +36,11 @@ class Item:
         self.price = int(self.pay_rate * self.price)
 
     @property
-    def get_name(self):
+    def name(self):
         return self.__name
 
-    @get_name.setter
-    def get_name(self, name):
+    @name.setter
+    def name(self, name):
         if len(name) > 10:
             self.__name = name[0:10]
         else:

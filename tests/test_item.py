@@ -49,3 +49,11 @@ def test_instantiate_from_csv():
 def test_string_to_number_static():
     """Преобразование строки в целое число"""
     assert Item.string_to_number("5.65") == 5
+
+
+def test_repr(device):
+    assert f"Item('Калькулятор', 1000, 2)"
+
+
+def test_str(device):
+    assert 'Калькулятор'

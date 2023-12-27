@@ -3,6 +3,7 @@ import pytest
 from src.item import Item
 
 
+
 @pytest.fixture
 def device():
     return Item("Калькулятор", 1000, 2)
@@ -57,3 +58,6 @@ def test_repr(device):
 
 def test_str(device):
     assert 'Калькулятор'
+
+
+
